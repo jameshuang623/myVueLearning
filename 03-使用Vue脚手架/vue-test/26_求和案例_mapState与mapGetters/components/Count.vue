@@ -25,6 +25,16 @@ export default {
     }
   },
   computed:{
+    // 自己写的计算属性
+    /*sum(){
+      return this.$store.state.sum
+    },
+    school(){
+      return this.$store.state.school
+    },
+    subject(){
+      return this.$store.state.subject
+    },*/
 
     // 借助 mapState 生成计算属性，从 state 中读取数据。（对象写法）
     // ...mapState({he: 'sum', xuexiao: 'school', xueke: 'subject'}),
@@ -33,6 +43,9 @@ export default {
     ...mapState(['sum', 'school', 'subject']),
 
 
+    /*bigSum(){
+      return this.$store.getters.bigSum
+    },*/
     ...mapGetters(['bigSum'])
   },
 
