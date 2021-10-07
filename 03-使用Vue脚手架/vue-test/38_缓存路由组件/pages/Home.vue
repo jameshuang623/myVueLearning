@@ -6,6 +6,11 @@
     <keep-alive include="News"> <!-- include 里指的是组件名（name）-->
       <router-view></router-view>
     </keep-alive>
+
+    <!--    缓存多个路由组件-->
+    <!--    <keep-alive :include="['News', 'Message']">-->
+    <!--      <router-view></router-view>-->
+    <!--    </keep-alive>-->
   </div>
 </template>
 
