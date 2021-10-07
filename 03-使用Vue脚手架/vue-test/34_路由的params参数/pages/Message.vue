@@ -8,7 +8,7 @@
 
         <!--        跳转路由并携带 params 参数，to 的对象写法-->
         <router-link :to="{
-                  name: 'xiangqing', // 注意，这个只能用 name，用 path 会错误！！
+                  name: 'xiangqing', // 注意，当使用 params 参数时，这个只能用 name，用 path 会错误！！
                   params: {
                     id: m.id,
                     title: m.title
